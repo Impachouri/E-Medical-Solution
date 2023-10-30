@@ -99,7 +99,7 @@ module.exports.destroySession =function(req,res){
 
 //editing profile
 module.exports.editProfile=function(req,res){  
-    return res.render('Doc_editProfile', {title:'MediCare|Edit-Profile'});
+    return res.render('doc_editProfile', {title:'MediCare|Edit-Profile'});
 }
 module.exports.saveChanges= async function(req,res){
     if(req.user.id==req.params.id){
